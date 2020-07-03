@@ -14,9 +14,11 @@ pipeline {
           }
         }
       }
-      sh """
-        echo "Outside retry"
-      """
+      steps {
+        sh """
+          echo "Outside retry"
+        """
+      }
     }
   }
 }
