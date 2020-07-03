@@ -1,10 +1,10 @@
 pipeline {
   agent any
+  options { timestamps () }
 
   stages {
     stage('Download retry step') {
       steps {
-        options { timestamps () }
         timeout(time: 2, unit: 'MINUTES') {
           retry(10) {
             sh """
