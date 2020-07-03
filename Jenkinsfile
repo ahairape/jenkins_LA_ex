@@ -13,9 +13,9 @@ pipeline {
             """
           }
         }
-          sh """
-            echo "Outside retry"
-          """
+        sh """
+          echo "Outside retry"
+        """
       }
     }
   }
