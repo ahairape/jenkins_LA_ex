@@ -14,6 +14,8 @@ pipeline {
           }
         }
       }
+    }
+    stage('Post-retry step') {
       steps {
         sh """
           echo "Outside retry"
